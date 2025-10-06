@@ -21,4 +21,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/api/role-permissions/{roleId}', [PermissionController::class, 'getRolePermissions'])->name('api.role.permissions');
     Route::post('/api/assign-permission-to-role', [PermissionController::class, 'assignPermissionToRole'])->name('api.assign.permission.to.role');
     Route::post('/api/assign-permission-to-user', [PermissionController::class, 'assignPermissionToUser'])->name('api.assign.permission.to.user');
+
+    Route::resource('users', App\Http\Controllers\UserController::class);
 });
