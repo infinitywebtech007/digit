@@ -23,4 +23,6 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/api/assign-permission-to-user', [PermissionController::class, 'assignPermissionToUser'])->name('api.assign.permission.to.user');
 
     Route::resource('users', App\Http\Controllers\UserController::class);
+    Route::resource('parties', App\Http\Controllers\PartyController::class);
+    Route::resource('calls', App\Http\Controllers\CallController::class);
 });
