@@ -46,4 +46,34 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function calls()
+    {
+        return $this->hasMany(Call::class);
+    }
+
+    // public function parties()
+    // {
+    //     return $this->hasMany(Party::class);
+    // }
+
+    function usermenu_profile_url()
+    {
+        return '/profile'; // Adjust to your profile route
+    }
+    function adminlte_profile_url()
+    {
+        return '/profile'; // Adjust to your profile route
+    }
+
+    function adminlte_image()
+    {
+        return '/img/user.svg'; // Adjust to your profile route
+    }
+
+    function adminlte_desc()
+    {
+        return auth()->user()->email; // Adjust to your profile route
+    }
+
 }

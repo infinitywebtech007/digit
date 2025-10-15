@@ -1,0 +1,27 @@
+=> Employees master
+
+    -> First Name
+    -> Middle Name
+    -> Last Name
+    -> Contact No
+    -> Email ID
+    -> Current Address
+    -> Parment Address
+    -> Family No
+    -> Blood Group
+    -> Designation
+    -> Qualification
+
+=>  Transaction master
+
+    -> Date
+    -> Challan No
+    -> Party Name
+    -> Material
+    -> Sr. No
+    -> Qty 
+    -> Unit
+    -> Ref. By
+    -> Status [Faulty , Byback]
+    -> Type [In, Out]
+    -> Remarks
